@@ -24,6 +24,8 @@ public class TaskStateEntity {
     @Column(unique = true)
     String name;
 
+    Long ordinal;
+
     @Builder.Default
     Instant createdAt = Instant.now();
 

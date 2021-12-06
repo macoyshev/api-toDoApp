@@ -12,7 +12,7 @@ import java.time.Instant;
 @NoArgsConstructor
 @RequiredArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
-public class ProjectDto {
+public class TaskDto {
 
     @NotNull
     Long id;

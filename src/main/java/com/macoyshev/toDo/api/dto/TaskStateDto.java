@@ -10,9 +10,9 @@ import java.time.Instant;
 @Data
 @Builder
 @NoArgsConstructor
-@RequiredArgsConstructor
+@AllArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
-public class ProjectDto {
+public class TaskStateDto {
 
     @NotNull
     Long id;
@@ -21,6 +21,10 @@ public class ProjectDto {
     String name;
 
     @NotNull
+    Long ordinal;
+
+    @NotNull
     @JsonProperty("created_at")
-    Instant createdAt;
+    Instant createAt;
+
 }
