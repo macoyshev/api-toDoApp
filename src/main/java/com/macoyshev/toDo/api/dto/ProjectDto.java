@@ -10,7 +10,7 @@ import java.time.Instant;
 @Data
 @Builder
 @NoArgsConstructor
-@RequiredArgsConstructor
+@AllArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class ProjectDto {
 
